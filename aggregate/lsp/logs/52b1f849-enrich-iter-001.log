@@ -1,0 +1,17 @@
+[2026-09-27T19:46:05Z] === ENRICH ITERATION 1 START | repo=asimov-modules/asimov-xai-module sha=52b1f849 ===
+[2026-09-27T19:46:05Z] [iter=1] PHASE START: enrich repo=asimov-modules/asimov-xai-module sha=52b1f849 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52b1f849-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52b1f8491ebbebc488c3a556fb600d79ac62f8f5.nq.gz
+[2026-09-27T19:46:14Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-27T19:46:15Z] [iter=1] AST store loaded triples=9242 load_secs=0 mem_mb=101 MB
+[2026-09-27T19:46:15Z] [iter=1] Step 2: Finding LSP targets mem_mb=101 MB
+[2026-09-27T19:46:15Z] [iter=1] LSP targets found call_sites=102 imports=3 extends=0 implements=0 secs=0
+[2026-09-27T19:46:15Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=101 MB
+[2026-09-27T19:46:15Z] [iter=1] Position index built positions=638 nodes_with_types=787 secs=0 mem_mb=101 MB
+[2026-09-27T19:46:15Z] [iter=1] Step 3: Starting LSP resolution mem_mb=101 MB already_completed_types=[] already_completed_files=0
+[2026-09-27T19:46:15Z] [iter=1] Resolving target type target_type=call_site count=102
+[2026-09-27T19:46:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=0 resolved=0 errors=0 current=src/lib.rs
+[2026-09-27T19:46:56Z] [iter=1] Target type resolved target_type=call_site resolved=69 errors=1 secs=42 mem_mb=101 MB
+[2026-09-27T19:46:56Z] [iter=1] Resolving target type target_type=import_statement count=3
+[2026-09-27T19:47:04Z] [iter=1] Target type resolved target_type=import_statement resolved=3 errors=0 secs=8 mem_mb=101 MB
+[2026-09-27T19:47:19Z] [iter=1] Step 5: Writing final enrichment file triples=842
+[2026-09-27T19:47:19Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/52b1f8491ebbebc488c3a556fb600d79ac62f8f5.nq.gz size_kb=11
+[2026-09-27T19:47:19Z] [iter=1] PHASE END: enrich elapsed_s=74 elapsed_min=1.2 total_triples=842
